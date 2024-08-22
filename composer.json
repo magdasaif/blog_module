@@ -12,9 +12,9 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Blog\\providers\\BlogServiceProvider",
-                "Modules\\Blog\\providers\\EventServiceProvider",
-                "Modules\\Blog\\providers\\RouteServiceProvider"
+                "Modules\\Blog\\Providers\\BlogServiceProvider",
+                "Modules\\Blog\\Providers\\EventServiceProvider",
+                "Modules\\Blog\\Providers\\RouteServiceProvider"
             ],
             "aliases": {
 
