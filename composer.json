@@ -2,6 +2,7 @@
     "name": "magdasaif/blog_module",
     "description": "",
     "type":"library",
+    "license": "MIT",
     "authors": [
         {
             "name": "magdasaif",
