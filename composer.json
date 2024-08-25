@@ -26,7 +26,13 @@
             "Modules\\Blog\\": "app/",
             "Modules\\Blog\\Database\\Factories\\": "database/factories/",
             "Modules\\Blog\\Database\\Seeders\\": "database/seeders/"
-        }
+        },
+         "exclude-from-classmap": [
+            "vendor/nwidart/laravel-modules/src/helpers.php"
+        ],
+        "files": [
+            "app/Overrides/Nwidart/Laravel_modules/Src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
