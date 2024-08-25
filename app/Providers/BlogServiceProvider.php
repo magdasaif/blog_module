@@ -49,7 +49,7 @@ class BlogServiceProvider extends ServiceProvider
     protected function registerCommands(): void
     {
         $this->commands([
-            // \Modules\Blog\Console\PublishModuleCommand::class,
+            \Modules\Blog\Console\PublishModuleCommand::class,
         ]);
 
     }
