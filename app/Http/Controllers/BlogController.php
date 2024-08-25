@@ -2,10 +2,11 @@
 
 namespace Modules\Blog\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Validator;
 
 class BlogController extends Controller
 {
@@ -28,9 +29,14 @@ class BlogController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request): RedirectResponse
+    public function store(Request $request)
     {
-        //
+        $validator = Validator::make( $request->all(),['name'=>'string|min:10']);
+        if ($validator->fails()) {
+            // return response()->json(['message' => $validator->messages()], 422);
+            return redirect()->back()->withErrors($validator->messages());
+        }
+        return $request->all();
     }
 
     /**

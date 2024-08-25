@@ -27,7 +27,7 @@
             "Modules\\Blog\\Database\\Factories\\": "database/factories/",
             "Modules\\Blog\\Database\\Seeders\\": "database/seeders/"
         },
-         "exclude-from-classmap": [
+        "exclude-from-classmap": [
             "vendor/nwidart/laravel-modules/src/helpers.php"
         ],
         "files": [
