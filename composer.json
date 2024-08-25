@@ -1,6 +1,6 @@
 {
     "name": "magdasaif/blog_module",
-    "description": "",
+    "description": "this is a blog package based on hmvc module",
     "type":"library",
     "license": "MIT",
     "authors": [
